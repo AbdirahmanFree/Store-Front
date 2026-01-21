@@ -8,7 +8,7 @@ function Hero(){
             <img src={heroNature}/>
         </div>
         <div className={`${classes.heroText}`}>
-            <h1>Where every adventure starts</h1>
+            <h1>Where Every Adventure Starts</h1>
             <Link to='shop'>Shop Now</Link>
         </div>
         

@@ -1,7 +1,6 @@
 import Hero from "../../components/hero/Hero"
 import Navbar from "../../components/navbar/Navbar"
 import classes from "./Home.module.css"
-import heroNature from '../../assets/heroNature.webp'
 function Home(){
     return (
         <div className={`${classes.container}`}>
@@ -11,6 +10,7 @@ function Home(){
             
             <div className={`${classes.content}`}>
                 <Hero/>
+
             </div>
         </div>
     )

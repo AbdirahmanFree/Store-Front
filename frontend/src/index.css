@@ -6,7 +6,8 @@ body {
   min-height: 100vh;
   justify-content: center;
   font-family: "Noto Sans", sans-serif;
-  color: rgb(8, 26, 0);
+  color: #f4f6f5;
+  background-color: #1f2a26;
 }
 
 a {
