@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin-top: 0px;
+    background-color: #d6d0d022;
+    min-height: max-content;
+    padding: 10px;
+    color: inherit;
+    opacity: 0.3;
+}
