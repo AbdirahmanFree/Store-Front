@@ -3,10 +3,10 @@
     justify-content: center;
     gap: 10%;
     margin-top: 0px;
-    background-color: #d6d0d013;
+    background-color: #d6d0d000;
     min-height: max-content;
     padding: 10px;
     color: inherit;
     font-weight: 700;
-    box-shadow: 0 0 10px 5px #d6d0d022
+    width: 100%;
 }
