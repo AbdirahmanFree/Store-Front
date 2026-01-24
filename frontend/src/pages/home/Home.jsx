@@ -1,7 +1,9 @@
 import Hero from "../../components/hero/Hero"
 import Navbar from "../../components/navbar/Navbar"
 import Carousel from "../../components/carousel/Carousel"
+import Mission from "../../components/mission/Mission"
 import classes from "./Home.module.css"
+
 
 function Home(){
     return (
@@ -13,6 +15,7 @@ function Home(){
             <div className={`${classes.content}`}>
                 <Hero/>
                 <Carousel />
+                <Mission />
             </div>
         </div>
     )
