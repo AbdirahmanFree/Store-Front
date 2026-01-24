@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #0f1a17;
+    min-height: max-content;
+    height: 30vh;
+}
+
+.textContainer {
+    max-width: 50%;
+}
