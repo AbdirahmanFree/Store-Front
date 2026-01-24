@@ -1,10 +1,11 @@
 import Navbar from "../../components/navbar/Navbar"
-function About(){
+function Cart(){
     return (
         <div>
             <Navbar />
-            <h1>About Us</h1>
+            <h1>Cart</h1>
         </div>
+        
     )
 }
-export default About
+export default Cart
