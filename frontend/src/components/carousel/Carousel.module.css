@@ -1,0 +1,49 @@
+.carouselContainer {
+    min-height: 50vh ;
+  color: aliceblue;
+  background-color: inherit;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10vh;
+  margin-bottom: 10vh
+}
+
+.itemContainer{
+    display: flex;
+    width: 50vw;
+    gap: 2rem;
+    justify-content: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
+}
+.itemTextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 2vh;
+}
+
+.itemImage {
+    height: 300px;
+    width: 200px;
+}
+
+.next {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 100px;
+    padding-left: 50px;
+}
+
+.slideOut {
+  transform: translateX(-40px);
+  opacity: 0;
+}
+
+.slideIn {
+  transform: translateX(0);
+  opacity: 1;
+}
+

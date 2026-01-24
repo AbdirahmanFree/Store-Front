@@ -4,6 +4,7 @@
     grid-template-rows: 1fr;
     color: #f4f6f5;
     place-items: center;
+    margin: 0;
 }
 
 .heroImg,
