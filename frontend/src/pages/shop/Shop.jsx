@@ -2,7 +2,7 @@ import Navbar from "../../components/navbar/Navbar"
 import classes from "./Shop.module.css"
 import Card from "../../components/card/Card"
 import { useEffect, useState } from "react"
-function Shop(){
+function Shop({cart, setCart}){
     const [items, setItems] = useState([])
     useEffect(() => {
        fetch('https://fakestoreapi.com/products').

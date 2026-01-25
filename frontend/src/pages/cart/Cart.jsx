@@ -1,5 +1,5 @@
 import Navbar from "../../components/navbar/Navbar"
-function Cart(){
+function Cart({cart, setCart}){
     return (
         <div>
             <Navbar />

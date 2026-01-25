@@ -1,4 +1,3 @@
-import route from "./routes"
 import { useState } from "react"
 import {createBrowserRouter, RouterProvider} from 'react-router'
 import Home from "./pages/home/Home"
@@ -20,7 +19,7 @@ function App(){
           },
           {
             path: "shop",
-            element: <Shop />
+            element: <Shop cart={cart} setCart={setCart} />
           },
           {
             path: 'about',
@@ -28,7 +27,7 @@ function App(){
           },
           {
             path: 'cart',
-            element: <Cart />
+            element: <Cart cart={cart} setCart={setCart} />
           }
         ])}/>
 
