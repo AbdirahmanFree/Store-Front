@@ -2,7 +2,7 @@ import Cart from "../../pages/cart/Cart"
 import classes from "./card.module.css"
 import CartBtn from "./cart/CartBtn"
 
-function Card({title, price, image}){
+function Card({title, price, image, id, cart, setCart}){
     return (
     <div className={`${classes.container}`}>
         <div className={`${classes.innerContainer}`}>
@@ -10,7 +10,7 @@ function Card({title, price, image}){
             <span>{title}</span>
             <h3>${price}</h3>
             </div>
-        <CartBtn/>
+        <CartBtn id={id} cart={cart} setCart={setCart}/>
 
     </div>
     )

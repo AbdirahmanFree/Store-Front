@@ -17,7 +17,7 @@ function Shop({cart, setCart}){
             <div className={`${classes.cardContainer}`}>
                 {items.map(item => {
                     return(
-                        <Card title={item.title} price={item.price} image={item.image}/>
+                        <Card title={item.title} price={item.price} image={item.image} id={item.id} cart={cart} setCart={setCart}/>
                     )
                 })}
             </div>
