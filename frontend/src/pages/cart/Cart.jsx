@@ -4,7 +4,15 @@ function Cart({cart, setCart}){
     return (
         <div className={`${classes.container}`}>
             <Navbar />
-            <h1>Cart</h1>
+            {Object.keys(cart).length == 0 || !cart ? (
+                <div className={`${classes.emptyContainer}`}>
+                    <h1>No Items in Cart</h1>
+                </div>
+            ): (
+                <div className={`${classes.cartContainer}`}>
+                    
+                </div>
+            )}
         </div>
         
     )

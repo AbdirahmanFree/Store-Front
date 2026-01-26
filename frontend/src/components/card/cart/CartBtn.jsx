@@ -10,10 +10,21 @@ function CartBtn({id, cart, setCart}){
     }
 
     function removeFromCart(id){
-        setCart(cart => ({
+
+        if(cart[id] == 1 && cart[id]==0){
+            setCart(cart => ({
             ...cart,
-            [id]: (cart[id] && cart[id] >0) ? cart[id]-1: cart[id]
-        }))
+            }))
+
+        }
+        else{
+            setCart(cart => ({
+                ...cart,
+                [id]:  cart[id]-1
+            }))
+        }
+        
+
     }
 
 
