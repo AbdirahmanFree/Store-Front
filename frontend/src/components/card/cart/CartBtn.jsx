@@ -1,33 +1,40 @@
 import classes from "./CartBtn.module.css"
 function CartBtn({id, cart, setCart}){
-    function addToCart(id){
-        if(cart.includes(id)){
-            setCart(cart => ({...cart,
-                id: 1
-            }))
-        }
-        else{
-            setCart(cart => ({...cart,
-                id: cart.id+1
-            }))
-        }
+
+    function addToCart(id) {
+        setCart(cart => ({
+            ...cart,
+            [id]: cart[id] ? cart[id] + 1 : 1
+        }))
+        console.log(cart)
     }
 
     function removeFromCart(id){
-        if(cart.includes(id)){
-            setCart(cart => ({...cart,
-                id: cart.id+1
-            }))
-        }
+        setCart(cart => ({
+            ...cart,
+            [id]: (cart[id] && cart[id] >0) ? cart[id]-1: cart[id]
+        }))
     }
+
+
+    
     return (
-        <div className={`${classes.container}`}>
-            <div className={`${classes.minus}`} onClick={() => removeFromCart(id)}>−</div>
-            <div className={`${classes.display}`}>{cart.id || 0}</div>
-            <div className={`${classes.plus}`} onClick={() => addToCart(id)}>+</div>
+        <>
+            {cart[id] == 0 || !cart[id] ? (
+                <div className={`${classes.container} ${classes.add}`}>
+                    <div className={`${classes.addToCart}`} onClick={()=> addToCart(id)}>Add To Cart</div>
+                </div>) : (
+                    <div className={`${classes.container}`}>
+            
+                <div className={`${classes.minus}`} onClick={() => removeFromCart(id)}>−</div>
+                <div className={`${classes.display}`}>{cart[id] || 0}</div>
+                <div className={`${classes.plus}`} onClick={() => addToCart(id)}>+</div>
 
 
-        </div>
+                </div>
+            )}
+        </>
+        
     )
 }
 

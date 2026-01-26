@@ -26,3 +26,13 @@
     height: 100%;
     font-size: 15px;
 }
+
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+}
+
+
