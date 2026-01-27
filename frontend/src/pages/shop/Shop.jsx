@@ -2,14 +2,8 @@ import Navbar from "../../components/navbar/Navbar"
 import classes from "./Shop.module.css"
 import Card from "../../components/card/Card"
 import { useEffect, useState } from "react"
-function Shop({cart, setCart}){
-    const [items, setItems] = useState([])
-    useEffect(() => {
-       fetch('https://fakestoreapi.com/products').
-       then((res) => res.json()).then((json) => 
-        setItems(json)
-    )
-    },[])
+function Shop({items, cart, setCart}){
+
     
     return (
         <div className={`${classes.container}`}>

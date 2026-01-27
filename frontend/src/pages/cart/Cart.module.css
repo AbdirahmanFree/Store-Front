@@ -6,6 +6,28 @@
     align-items: center;
 }
 
-.emptyContainer {
+.emptyContainer,
+.cartContainer {
     margin: 50px auto;
+    background-color: #0f1a17;
+    padding: 20px;
+    border-radius: 5%;
+}
+
+.cartContainer {
+    min-height: 20vh;
+    width: 80%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.itemContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image {
+    height: 100px;
 }
