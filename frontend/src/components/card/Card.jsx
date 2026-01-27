@@ -1,5 +1,5 @@
 import Cart from "../../pages/cart/Cart"
-import classes from "./card.module.css"
+import classes from "./Card.module.css"
 import CartBtn from "./cart/CartBtn"
 
 function Card({title, price, image, id, cart, setCart}){
