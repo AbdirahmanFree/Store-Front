@@ -11,10 +11,9 @@ function CartBtn({id, cart, setCart}){
 
     function removeFromCart(id){
 
-        if(cart[id] == 1 && cart[id]==0){
-            setCart(cart => ({
-            ...cart,
-            }))
+        if( cart[id]==1){
+            const {[id]:_, ...rest} = cart
+            setCart(rest)
 
         }
         else{
